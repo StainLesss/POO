@@ -23,9 +23,8 @@ namespace TD1
         {
             string usrFirstName, usrLastName,usrHeight,usrWeight,usrYear;
             bool stayLoop = true;
-            do
-            {
-                Console.WriteLine("Binevenue dans mon programme jeune etranger inmberbe");
+            do{
+                Console.WriteLine("Binevenue dans mon programme jeune etranger imberbe");
                 usrLastName = AskUserInputUntilIsOnlyLetters("Donne moi ton nom ?");
                 usrFirstName = AskUserInputUntilIsOnlyLetters("Et quel est ton prenom ?");
                 Console.WriteLine("Bonjour " + FormatTheName(usrFirstName, usrLastName));
@@ -35,6 +34,7 @@ namespace TD1
                 usrYear = AskUserUntilInputIsMoreThanZero("Quel est ton age ? ");
 
                 if (int.Parse(usrYear) < 18) { Console.WriteLine("ah ah, tu es mineur , BOUOUUOUUO ! "); }
+
                 float imc = CalculImc(usrWeight, usrHeight);
                 Console.WriteLine("IMC = " + imc.ToString("00"));
 
@@ -169,6 +169,21 @@ namespace TD1
         }
 
         /// <summary>
+        /// Control if the value can be converted into integer (no punctuation neither alpha)
+        /// </summary>
+        static bool IsOnlyInteger(string aValue)
+        {
+            int valError;
+            bool correctInput = int.TryParse(aValue, out valError);
+
+            if (correctInput)
+            {
+                return true;
+            }
+            else { return false; }
+        }
+
+        /// <summary>
         /// Ask user to enter value until it is only a value more than zero
         /// <remarks><br>Be carefull, it does handle if input contains letters</br></remarks>
         /// </summary>
@@ -181,7 +196,8 @@ namespace TD1
             {
                 Console.WriteLine(whatToAsk);
                 userInput = Console.ReadLine();
-                if (IsStricMoreThanZero(userInput)){ stayloop = false; }
+                if (IsOnlyInteger(userInput) && IsStricMoreThanZero(userInput)){ 
+                    stayloop = false; }
                 else { Console.WriteLine("ERREUR"); }
             } while (stayloop);
             return userInput;
