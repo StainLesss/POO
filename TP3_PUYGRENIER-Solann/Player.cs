@@ -1,31 +1,27 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TP2_Puygrenier_Solann;
 
-namespace TP2_Puygrenier_Solann
+namespace TP3
 {
     public class Player
     {
-        private string pseudo;
-        private string userFullName;
-        private Vaisseau userSpaceShip;
+        public string pseudo;
+        public string userFullName;
+        public ViperMKII spaceShip;
 
-        public Vaisseau UserSpaceShip{
-            get;set;
-        }
         public Player(string pseudo,string firstName,string lastName){
             this.pseudo = pseudo;
             this.userFullName = FormatPlayerInformation(firstName) + " "+ FormatPlayerInformation(lastName);
-            UserSpaceShip = new Vaisseau();
+            ViperMKII spaceShip = new ViperMKII();
         }
         public string GetPseudo() {return pseudo;}
-
-        public string UserFullName{
-            get{ return userFullName;}
-            set{ this.userFullName = value; }
-        }
+        public string GetUserFullName() { return userFullName; }
+        public ViperMKII GetSpaceShip() { return spaceShip; }
 
         public override string ToString(){
             return this.GetPseudo(); //+ " (" + this.GetFullName() + ")";

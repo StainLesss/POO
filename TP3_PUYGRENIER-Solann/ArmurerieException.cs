@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP2_Puygrenier_Solann
+namespace TP3
 {
     public class ArmurerieException : System.Exception{
         public ArmurerieException() : base(){}

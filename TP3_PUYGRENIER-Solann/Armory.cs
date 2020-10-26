@@ -5,7 +5,7 @@ using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TP2_Puygrenier_Solann
+namespace TP3
 {
     class Armory{
         private List<Weapon> myWeapon = new List<Weapon>();
