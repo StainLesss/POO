@@ -30,7 +30,7 @@ namespace TP3
         }
 
         public void getShoot(int damageReceived){
-            if (Alive == false) { Console.WriteLine("Have a look on this : dead Space ship CANNOT be shotable!"); }
+            if (Alive == false) { return; }
             else if (Shield > damageReceived) Shield -= damageReceived;
             else if ((Shield <= damageReceived) && (Shield > 0)) {
                 Shield = 0;
@@ -40,6 +40,7 @@ namespace TP3
                 Health = 0;
                 Alive = false; 
             }
+            Console.WriteLine(" -"+ damageReceived);
         }
 
         public bool AddWeapon(Weapon anotherWeapon){
@@ -59,23 +60,11 @@ namespace TP3
             }
             return false;
         }
-
-        public void ShowWeapon(){
-            int cnt = 0;
-            foreach(Weapon weap in weaponInventory){
-                cnt++;
-                Console.WriteLine($"Weapon no°{cnt}: {weap.ToString()}");
-            }
-        }
-
         public override string ToString(){
             string str = "";
-            str = "[Health :" + Health + "/" + initHealth + "\t]\n" +
-                "[Shield :" + Shield + "/" + initShield + "\t]\n" +
-                "[Curent weapon no:" + equipedWeapon + "/" + LIMIT_INVENTORY + "\t]\n";
-            foreach (Weapon weap in weaponInventory){
-                str = str + weap.ToString();
-            }
+            str = "[Health :" + Health + "/" + initHealth + "|" +
+                "Shield :" + Shield + "/" + initShield + "|" +
+                "Curent weapon no:" + equipedWeapon + "/" + LIMIT_INVENTORY + "]";
             return str;
         }
 

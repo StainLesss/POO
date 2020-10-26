@@ -9,11 +9,11 @@ public class Dart : Vaisseau {
         initShield = 3;
         Health = initHealth;
         Shield = initShield;
-            Weapon dartWeapon = new Weapon("MajorLazer", 1, 2, Type.Direct,1);
+        Weapon dartWeapon = new Weapon("MajorLazer", 1, 2, Type.Direct,1);
         this.AddWeapon(dartWeapon);
     }
     public override void Attaque(Vaisseau targetedSpaceShip){
-        targetedSpaceShip.getShoot(this.GetWeapon().Shoting());
+            targetedSpaceShip.getShoot(this.GetWeapon().Shoting());
     }
 }
 }

@@ -15,7 +15,7 @@ namespace TP3
             //Weapon falseAndUselessWeapon = new Weapon("", 0, 0, Type.Direct, -1); //useles weapon, can prevent some errors
         }
         public void Utilise(List<Vaisseau> aSpaceshipList){
-            if (aSpaceshipList[0] == this) this.Attaque(ThePlayerOne.spaceShip);
+            if (aSpaceshipList[0].Equals(this)) this.Attaque(ThePlayerOne.spaceShip);
             Health = 0;
             this.Alive = false;
         }
@@ -23,7 +23,7 @@ namespace TP3
             targetedSpaceShip.getShoot(10);
         }
 
-        public override string ToString()
+        /*public override string ToString()
         {
             string str = "";
             str = "[Health :" + Health + "/" + initHealth + "\t]\n" +
@@ -34,7 +34,7 @@ namespace TP3
                 str = str + weap.ToString();
             }
             return str;
-        }
+        }*/
 
     }
 }

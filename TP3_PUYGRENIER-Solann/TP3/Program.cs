@@ -20,37 +20,11 @@ namespace TP2_Puygrenier_Solann
         {
             Console.WriteLine("PUYGRENIER Solann - le 26/10/20");
             Console.WriteLine("======================");
-            /*
-            SpaceInvaders TheBestGame = new SpaceInvaders();
-            TheBestGame.Main();
-            TheBestGame.ShowPlayer();
-            TheBestGame.ShowArmory();
-            TheBestGame.ShowAllBattleShip();
+            SpaceInvaders MyGame = new SpaceInvaders();
+            MyGame.Main();
 
-            //Test exception
-            Armory ArmoryForTest = new Armory();
-            Weapon WeaponForTest = new Weapon();
-            Console.WriteLine("\nStatement :\n ArmoryForTest.AddWeapon(WeaponForTest)\n ArmoryForTest.AddWeapon(WeaponForTest)");
-            ArmoryForTest.AddWeapon(WeaponForTest);
-            ArmoryForTest.AddWeapon(WeaponForTest);
-            Console.ReadLine();
-            */
 
-            ViperMKII thePlayerspaceShipp = new ViperMKII();
-            BWings enemySpaceShip = new BWings();
 
-            Console.WriteLine(thePlayerspaceShipp.ToString());
-
-            enemySpaceShip.Attaque(thePlayerspaceShipp);
-            enemySpaceShip.Attaque(thePlayerspaceShipp);
-            enemySpaceShip.Attaque(thePlayerspaceShipp);
-            enemySpaceShip.Attaque(thePlayerspaceShipp);
-            enemySpaceShip.Attaque(thePlayerspaceShipp);
-            enemySpaceShip.Attaque(thePlayerspaceShipp);
-            enemySpaceShip.Attaque(thePlayerspaceShipp);
-            enemySpaceShip.Attaque(thePlayerspaceShipp);
-
-            Console.WriteLine(thePlayerspaceShipp.ToString());
         }
     }
 }
