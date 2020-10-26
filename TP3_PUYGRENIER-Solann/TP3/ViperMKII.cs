@@ -9,7 +9,7 @@ namespace TP3
     public class ViperMKII : Vaisseau
     {
         public ViperMKII() : base(){
-            initHealth = 100;
+            initHealth = 10;
             initShield = 15;
             Health = initHealth;
             Shield = initShield;

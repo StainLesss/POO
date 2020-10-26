@@ -19,9 +19,6 @@ namespace TP3
 
         public abstract void Attaque(Vaisseau targetedSpaceShip);
 
-        /// <summary>
-        /// Default space ship
-        /// </summary>
         public Vaisseau(){
             weaponInventory = new List<Weapon>();
             Alive = true;
@@ -60,6 +57,7 @@ namespace TP3
             }
             return false;
         }
+
         public override string ToString(){
             string str = "";
             str = "[Health :" + Health + "/" + initHealth + "|" +
@@ -76,7 +74,6 @@ namespace TP3
             if (equipedWeapon == LIMIT_INVENTORY) equipedWeapon = 1;
             else equipedWeapon++;
         }
-
 
         public float AverageDamage(){
             float sum = 0;
