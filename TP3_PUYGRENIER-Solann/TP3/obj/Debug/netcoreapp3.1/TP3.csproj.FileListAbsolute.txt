@@ -1,0 +1,13 @@
+D:\02_Project\Csharp\POO\TP3_PUYGRENIER-Solann\TP3\bin\Debug\netcoreapp3.1\TP3.exe
+D:\02_Project\Csharp\POO\TP3_PUYGRENIER-Solann\TP3\bin\Debug\netcoreapp3.1\TP3.deps.json
+D:\02_Project\Csharp\POO\TP3_PUYGRENIER-Solann\TP3\bin\Debug\netcoreapp3.1\TP3.runtimeconfig.json
+D:\02_Project\Csharp\POO\TP3_PUYGRENIER-Solann\TP3\bin\Debug\netcoreapp3.1\TP3.runtimeconfig.dev.json
+D:\02_Project\Csharp\POO\TP3_PUYGRENIER-Solann\TP3\bin\Debug\netcoreapp3.1\TP3.dll
+D:\02_Project\Csharp\POO\TP3_PUYGRENIER-Solann\TP3\bin\Debug\netcoreapp3.1\TP3.pdb
+D:\02_Project\Csharp\POO\TP3_PUYGRENIER-Solann\TP3\obj\Debug\netcoreapp3.1\TP3.csprojAssemblyReference.cache
+D:\02_Project\Csharp\POO\TP3_PUYGRENIER-Solann\TP3\obj\Debug\netcoreapp3.1\TP3.AssemblyInfoInputs.cache
+D:\02_Project\Csharp\POO\TP3_PUYGRENIER-Solann\TP3\obj\Debug\netcoreapp3.1\TP3.AssemblyInfo.cs
+D:\02_Project\Csharp\POO\TP3_PUYGRENIER-Solann\TP3\obj\Debug\netcoreapp3.1\TP3.csproj.CoreCompileInputs.cache
+D:\02_Project\Csharp\POO\TP3_PUYGRENIER-Solann\TP3\obj\Debug\netcoreapp3.1\TP3.dll
+D:\02_Project\Csharp\POO\TP3_PUYGRENIER-Solann\TP3\obj\Debug\netcoreapp3.1\TP3.pdb
+D:\02_Project\Csharp\POO\TP3_PUYGRENIER-Solann\TP3\obj\Debug\netcoreapp3.1\TP3.genruntimeconfig.cache
