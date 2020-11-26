@@ -1,24 +1,34 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Media;
 
 namespace TP3
 {
     public abstract class Vaisseau{
-        protected int initHealth ;
-        protected int initShield;
+
+
+
+        protected int initHealth = 50;
+        protected int initShield = 50;
         protected const int LIMIT_INVENTORY = 3;
         protected int equipedWeapon=1;
 
-        protected List<Weapon> weaponInventory;
+        public List<Weapon> weaponInventory;
         public int Health { get; set; }
         public int Shield { get; set; }
         public bool Alive { get; set; }
 
-        public abstract void Attaque(Vaisseau targetedSpaceShip);
+        public string SpaceShipSource = "../Graphics/defaultSpaceShip.png";
+    public abstract void Attaque(Vaisseau targetedSpaceShip);
 
+        /// <summary>
+        /// Default space ship
+        /// </summary>
         public Vaisseau(){
             weaponInventory = new List<Weapon>();
             Alive = true;
@@ -57,7 +67,6 @@ namespace TP3
             }
             return false;
         }
-
         public override string ToString(){
             string str = "";
             str = "[Health :" + Health + "/" + initHealth + "|" +
@@ -74,6 +83,7 @@ namespace TP3
             if (equipedWeapon == LIMIT_INVENTORY) equipedWeapon = 1;
             else equipedWeapon++;
         }
+
 
         public float AverageDamage(){
             float sum = 0;

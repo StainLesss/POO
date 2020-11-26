@@ -35,10 +35,17 @@ namespace TP3
             ThePlayerOne.spaceShip = new ViperMKII();
 
             BWings enemy1 = new BWings();
+            //enemy1.ChangeWeapon();
+
             Dart enemy2 = new Dart();
+            //enemy2.ChangeWeapon();
+
             F_18 enemy3 = new F_18();
+
             Rocinante enemy4 = new Rocinante();
-            Tardis enemy5 = new Tardis();
+            //enemy4.ChangeWeapon();
+
+            //Tardis enemy5 = new Tardis();
             ListEnemy.Add(enemy1);
             ListEnemy.Add(enemy2);
             ListEnemy.Add(enemy3);
@@ -49,6 +56,7 @@ namespace TP3
             Console.WriteLine("Conteur : " + (AllSpaceShip.Count - 1));
             AllSpaceShip.AddRange(ListEnemy);
             Console.WriteLine("Conteur : " + (AllSpaceShip.Count - 1));
+
         }
 
         private void MakeOneCompleteTurnOfGame(){
